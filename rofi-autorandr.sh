@@ -5,7 +5,8 @@ set -e
 
 function get_layouts()
 {
-    autorandr
+    autorandr | grep " (detected)"
+    autorandr | grep --invert-match " (detected)"
 }
 
 function main()
