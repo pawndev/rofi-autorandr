@@ -1,7 +1,7 @@
 # Maintainer: Christophe Coquelet <coqueletc at gmail dot com>
 
 pkgname=rofi-autorandr
-pkgver=1.0.7
+pkgver=1.1.0
 pkgrel=0
 pkgdesc="Autorandr integration for rofi"
 arch=('x86_64')
@@ -18,4 +18,4 @@ prepare() {
 package() {
   install -Dm 755 "$srcdir/$pkgname-$pkgver/rofi-autorandr.sh" "$pkgdir/usr/bin/rofi-autorandr"
 }
-md5sums=('8f107d5e6508d86188ba7b59b3da8e6a')
+md5sums=('beafd2656e7f67dde23e722de610206e')
